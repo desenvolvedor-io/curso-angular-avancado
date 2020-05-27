@@ -1,0 +1,25 @@
+version: "3"
+services:
+    
+    api:
+        image: desenvolvedorio/api-aspnet-curso-angular:latest
+        container_name: api-aspnet-curso-angular        
+        ports:
+            - "5001:80"
+        environment: 
+            - ASPNETCORE_ENVIRONMENT=Production
+        depends_on:
+            - db
+    db:
+        image: desenvolvedorio/sql-api-curso-angular:latest
+        container_name: sql-api-curso-angular
+        ports:  
+            - "1433:1433"
+        environment:
+            SA_PASSWORD: "MeuDB@123"
+            ACCEPT_EULA: "Y"
+    client:
+        image: desenvolvedorio/app-spa-curso-angular:latest
+        container_name: app-spa-curso-angular
+        ports:
+            - "8080:80"
