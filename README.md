@@ -14,20 +14,20 @@ Para criar rapidamente o ambiente disponibilizamos as imagens Docker dos 3 recur
 > **Requisito:** É necessário ter o docker instalado em seu sistema operacional (Linux, Windows ou Mac)
 
 ### Disponibilizar apenas o back-end
-Rode o comando (apontando a pasta local do arquivo):
+Rode o comando (apontando a pasta local do arquivo):  
 ` docker-compose -f docker-compose.backend.yml up` 
 
 ### Disponibilizar front-end e back-end
-Rode o comando (apontando a pasta local do arquivo):
+Rode o comando (apontando a pasta local do arquivo):  
 ` docker-compose -f docker-compose.fullstack.yml up` 
 
-#### É possível renomear um dos arquivos para 'docker-compose.yml' e rodar o comando mais simplificado:
+#### É possível renomear um dos arquivos para 'docker-compose.yml' e rodar o comando mais simplificado:  
 ` docker-compose up` 
 
-#### Para parar a execução no console (executando no modo 'detached') :
+#### Para parar a execução no console (executando no modo 'detached'):  
 ` docker-compose down` 
 
-#### Para parar a execução no console (executando no modo 'attached') :
+#### Para parar a execução no console (executando no modo 'attached'):  
 <kbd>Crtl</kbd> + <kbd>C</kbd>
 
 
