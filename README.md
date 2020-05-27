@@ -15,21 +15,20 @@ Para criar rapidamente o ambiente disponibilizamos as imagens Docker dos 3 recur
 
 ### Disponibilizar apenas o back-end
 Rode o comando (apontando a pasta local do arquivo):  
-` docker-compose -f docker-compose.backend.yml up` 
+- ` docker-compose -f docker-compose.backend.yml up` 
 
 ### Disponibilizar front-end e back-end
 Rode o comando (apontando a pasta local do arquivo):  
-` docker-compose -f docker-compose.fullstack.yml up` 
+- ` docker-compose -f docker-compose.fullstack.yml up` 
 
 #### É possível renomear um dos arquivos para 'docker-compose.yml' e rodar o comando mais simplificado:  
-` docker-compose up` 
+- ` docker-compose up` 
 
 #### Para parar a execução no console (executando no modo 'detached'):  
-` docker-compose down` 
+- ` docker-compose down` 
 
 #### Para parar a execução no console (executando no modo 'attached'):  
-<kbd>Crtl</kbd> + <kbd>C</kbd>
-
+- <kbd>Crtl</kbd> + <kbd>C</kbd>
 
 ## Sobre o curso
 
